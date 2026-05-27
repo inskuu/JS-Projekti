@@ -72,7 +72,7 @@ document.querySelectorAll(".valikonsisalto").forEach(valikko => {
     function haeHahmo(nimi) {
     const hahmo = hahmot.find(hahmo => hahmo.name === nimi);
     
-      document.querySelector("#hahmoKortti").innerHTML = `
+      $("#hahmoKortti").innerHTML = `
       <h1>${hahmo.name}</h1>
 <hr>
      <h3>Muut nimet</h3>
@@ -198,3 +198,35 @@ hakukentta.addEventListener("input", function () {
     hakukentta.classList.remove("virhe");
     hakukentta.placeholder = alkuperainenPlaceholder;
 });
+
+//Liikkuvat pilvet headeriin vanta.js avulla 
+VANTA.CLOUDS({
+  el: "#pilvet",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  skyColor: 0x151b2b,
+  cloudColor: 0x4b5366,
+  sunColor: 0xf0d58a,
+  sunGlareColor: 0x8b5a2b,
+  sunlightColor: 0xc9b37e,
+  speed: 1.1
+});
+
+//Navigointipalkissa vaihtuvat taikalauseet jsdelivr avulla
+window.addEventListener("DOMContentLoaded", () => {
+  new Typed("#typed", {
+    strings: [
+      "Qui arcana quaerit, veritatem in umbris inveniet",
+      "Per noctem obscuram, lumen magiae semper ardet",
+      "In silentio noctis, antiqua arcana susurrant",
+      "Magia vetus adhuc per muros huius castelli fluit"
+
+
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+});
+

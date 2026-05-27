@@ -8,11 +8,33 @@
 header {
   color: #aa7502;
   font-family: "Montez";
-  font-size: 28px;
-  background-image: url("../kuvat/tausta.png") ;
+  font-size: 40px;
 text-align: center;
-padding: 50px; 
+  letter-spacing: 3px;
+  text-shadow:
+    2px 2px 0 #5c3b00,
+    0 0 8px rgba(255, 200, 80, 0.35);
 }
+
+
+#pilvet {
+  width: 100%;
+  min-height: 320px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+#pilvet canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .tausta {
     min-height: 100dvh;
     background-color: white;
@@ -272,4 +294,16 @@ hr {
     margin: 15px auto 0;
     display: block;
   }
+}
+
+#typed {
+  color: #aa7502;
+  font-family: "Montez";
+  font-size: 28px;
+}
+
+.typed-kohta {
+  flex: 1;
+  display: flex;
+  margin-left: 480px;
 }
