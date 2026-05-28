@@ -36,6 +36,7 @@ let hahmot = [];
 
 //Lataa kaikki hahmot
 function lataaHahmot() {
+
 // Ajax pyynnön lähetys
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET","https://hp-api.onrender.com/api/characters",true);
@@ -72,7 +73,7 @@ document.querySelectorAll(".valikonsisalto").forEach(valikko => {
     function haeHahmo(nimi) {
     const hahmo = hahmot.find(hahmo => hahmo.name === nimi);
     
-      $("#hahmoKortti").innerHTML = `
+      $("#hahmoKortti").html(`
       <h1>${hahmo.name}</h1>
 <hr>
      <h3>Muut nimet</h3>
@@ -99,7 +100,7 @@ document.querySelectorAll(".valikonsisalto").forEach(valikko => {
   <div class="kortti-kuva">
   ${hahmo.image ? `<img src="${hahmo.image}" alt="${hahmo.name}" class="hahmokuva">` : ""}
   </div>
-`;
+`);
 }
 
 //Lisää kuvalliset hahmot oikeisiin alasvetovalikoihin
@@ -214,7 +215,7 @@ VANTA.CLOUDS({
 });
 
 //Navigointipalkissa vaihtuvat taikalauseet jsdelivr avulla
-window.addEventListener("DOMContentLoaded", () => {
+
   new Typed("#typed", {
     strings: [
       "Qui arcana quaerit, veritatem in umbris inveniet",
@@ -228,5 +229,41 @@ window.addEventListener("DOMContentLoaded", () => {
     backSpeed: 30,
     loop: true
   });
-});
 
+//Kortit ilmestyvät vuorotellen näkyviin jQuery efekteillä
+$(document).ready(function() {
+$(".vasenkortti")
+.css({
+      position: "relative",
+      top: "200px",
+      opacity: 0
+    })
+    .delay(200)
+    .animate({
+      top: "0px",
+      opacity: 1
+    }, 600);
+
+$(".oikeakortti")
+    .css({
+      position: "relative",
+      top: "-100px",
+      opacity: 0
+    })
+    .delay(800)
+    .animate({
+      top: "0px",
+      opacity: 1
+    }, 600);
+
+$(".keskimmainenkortti")
+  .css({
+    position: "relative",
+    opacity: 0
+  })
+  .delay(1400)
+  .animate({
+    opacity: 1
+  }, 800);
+
+});

@@ -16,7 +16,7 @@ text-align: center;
     0 0 8px rgba(255, 200, 80, 0.35);
 }
 
-
+ /* Taustapilvien asetukset */
 #pilvet {
   width: 100%;
   min-height: 320px;
@@ -26,7 +26,6 @@ text-align: center;
   align-items: center;
   justify-content: center;
 } 
-
 #pilvet canvas {
   position: absolute !important;
   top: 0;
@@ -172,6 +171,7 @@ z-index: 999;
 .kortti-rivi {
     display: flex;
     gap: 20px;
+    position: relative;
 }
 .oikeakortti {
   flex: 1;
@@ -241,7 +241,7 @@ hr {
   .oikeakortti {
     flex: none;
     width: 100%;            
-    margin: 0;             
+    margin: 0;   
   }
 
   #hakuTulokset {
@@ -296,10 +296,12 @@ hr {
   }
 }
 
+ /* Ilmestyvän/häviävän tekstin asetukset */
 #typed {
   color: #aa7502;
   font-family: "Montez";
   font-size: 28px;
+  margin: 0;
 }
 
 .typed-kohta {
@@ -307,3 +309,4 @@ hr {
   display: flex;
   margin-left: 480px;
 }
+
