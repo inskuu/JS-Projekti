@@ -33,7 +33,7 @@ Linkki kuvaan (https://laureauas-my.sharepoint.com/:i:/g/personal/iik00062_laure
 ## Teknologiat
 Käytin seuraavia teknologioita: `html`, `css` ja `jscript`.
 Pohjana toimii projekti 2 työ. 
-Lisäyksenä tein JavaScript kirjastojen avulla headeriin liikkuvat pilvet taustalle (Vanta.js) ja navigointipalkkiin ilmestyvän/häviävän tekstin (typed.js). Lisäksi muokkasin kortti elementtejä niin, että sivut avatessa kolme kortti elementtiä ilmestyvät kaikki hieman eri tyylillä sekä lyhensin myös AJAX hakua (jQuery)
+Lisäyksenä tein JavaScript kirjastojen avulla headeriin liikkuvat pilvet taustalle (Vanta.js) ja navigointipalkkiin ilmestyvän/häviävän tekstin (typed.js). Lisäksi muokkasin kortti elementtejä niin, että sivut avatessa kolme kortti elementtiä ilmestyvät kaikki hieman eri tyylillä sekä lyhensin myös AJAX hakua (jQuery).
 
 ## Asennus
 Sovellus toimii netlify linkin (https://jsprojekti.netlify.app/) kautta.
@@ -54,11 +54,11 @@ Sovellus toimii netlify linkin (https://jsprojekti.netlify.app/) kautta.
 - [4K wallpapers](https://4kwallpapers.com/fantasy/hogwarts-harry-13694.html)
     - Täältä otin sivuilla olevan kuvan Tylypahkasta.
 - [Vanta.js](https://www.vantajs.com/)
-    - Liikkuvat pilvet headeriin
+    - Liikkuvat pilvet headeriin.
 - [typed.js](https://mattboldt.github.io/typed.js/)
-    - Ilmestyvä/häviävä taikateksti
+    - Ilmestyvä/häviävä taikateksti.
 - [jQuery](https://jquery.com/)
-    - Mahdollisti koodin lyhentämistä ja lyhemmän AJAX haun
+    - Mahdollisti koodin lyhentämistä ja lyhemmän AJAX haun.
 - Lisäksi käytin paljon omaa aiempaa websivuston kehittämisen projektia sekä aiempaa tämän kurssin projektia, josta katsoin apuja mm. css tyyleihin ja myös javascriptin käyttöön.
 
 
