@@ -37,22 +37,11 @@ let hahmot = [];
 //Lataa kaikki hahmot
 function lataaHahmot() {
 
-// Ajax pyynnön lähetys
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET","https://hp-api.onrender.com/api/characters",true);
-xmlhttp.send();
-
-//Vastauksen käsittely
-xmlhttp.onreadystatechange=function() {
-if (xmlhttp.readyState==4 &&
-xmlhttp.status==200) {
-
-//Parsitaan JSON ja tallennetaan hahmot taulukkoon ja lisätään alasvetovalikoihin.
-    const tiedot = JSON.parse(xmlhttp.responseText);
-    hahmot = tiedot;
-    taytaValikot();
-}
-};
+// Ajax pyynnön lähetys jQueryn avulla
+$.get("https://hp-api.onrender.com/api/characters", function(tiedot) {
+  hahmot = tiedot;
+  taytaValikot();
+});
 }
 
 lataaHahmot();
@@ -201,21 +190,22 @@ hakukentta.addEventListener("input", function () {
 });
 
 //Liikkuvat pilvet headeriin vanta.js avulla 
-VANTA.CLOUDS({
-  el: "#pilvet",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  skyColor: 0x151b2b,
-  cloudColor: 0x4b5366,
-  sunColor: 0xf0d58a,
-  sunGlareColor: 0x8b5a2b,
-  sunlightColor: 0xc9b37e,
-  speed: 1.1
+window.addEventListener("load", function () {
+  VANTA.CLOUDS({
+    el: "#pilvet",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    skyColor: 0x151b2b,
+    cloudColor: 0x4b5366,
+    sunColor: 0xf0d58a,
+    sunGlareColor: 0x8b5a2b,
+    sunlightColor: 0xc9b37e,
+    speed: 1.1
+  });
 });
 
 //Navigointipalkissa vaihtuvat taikalauseet jsdelivr avulla
-
   new Typed("#typed", {
     strings: [
       "Qui arcana quaerit, veritatem in umbris inveniet",
@@ -233,7 +223,7 @@ VANTA.CLOUDS({
 //Kortit ilmestyvät vuorotellen näkyviin jQuery efekteillä
 $(document).ready(function() {
 $(".vasenkortti")
-.css({
+    .css({
       position: "relative",
       top: "200px",
       opacity: 0
@@ -267,3 +257,4 @@ $(".keskimmainenkortti")
   }, 800);
 
 });
+

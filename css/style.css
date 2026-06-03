@@ -9,7 +9,7 @@ header {
   color: #aa7502;
   font-family: "Montez";
   font-size: 40px;
-text-align: center;
+  text-align: center;
   letter-spacing: 3px;
   text-shadow:
     2px 2px 0 #5c3b00,
@@ -39,6 +39,7 @@ text-align: center;
     background-color: white;
     overflow: hidden;
     box-sizing: border-box;
+    
 }
 
  /* Oma fontti */
@@ -241,12 +242,12 @@ hr {
   .oikeakortti {
     flex: none;
     width: 100%;            
-    margin: 0;   
+    margin: 0;
   }
 
   #hakuTulokset {
     max-height: 400px;
-    font-size: 14px; 
+    font-size: 14px;  
   }
 
   #hahmoKortti {

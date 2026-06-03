@@ -2,23 +2,17 @@
 Tylypahkan hahmot
 
 ## Verkkolinkit:
-- Pääset julkaistuun sovellukseen käsiksi osoitteessa [github.io](https://inskuu.github.io/AjaxProjekti/)
-[netlify.com](https://ajaxprojekti.netlify.app/)
-- Linkki projektin videoesittelyyn [google.com](https://google.com)
-- Linkki GitHub repositorioon [github.com](https://github.com/inskuu/AjaxProjekti.git)
-- Linkki videoesittelyyn [laureauas-my.sharepoint.com/](https://laureauas-my.sharepoint.com/:v:/g/personal/iik00062_laurea_fi/IQAgijogruHCRa2RPhUZIdTjAS2jfwEXob0WljkQ9QuFflY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6OuRnj)
+- Pääset julkaistuun sovellukseen käsiksi osoitteessa [github.io](https://inskuu.github.io/JS-Projekti/)
+[netlify.com](https://jsprojekti.netlify.app/)
+- Linkki GitHub repositorioon [github.com](https://github.com/inskuu/JS-Projekti.git)
+- Linkki videoesittelyyn [laureauas-my.sharepoint.com/]()
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin hyvin. Olen tyytyväinen sivuston toimintaan ja ulkoasuun.
-Parantamista olisi hakutoiminnon monipuolistamisessa. Nyt se hakee vain tuvan nimellä. Voisi toimia myös hahmon nimellä/lempinimellä hakiessa.
-En keksi mitään suurempia puutteita sovelluksesta. Tietenkin apeja yhdistämällä saisi hahmojen määrää vielä lisättyä.
-Koen, että olen oppinut perusteet apien käytöstä, vaikka edelleen kyllä tarvitsee olla ohje vieressä, jotta muistaa miten haku tehdään.
-Epäselväksi jäi ehkä useiden apien yhdistäminen, hieman sitä tutkin, mutta kuulosti todella monimutkaiselta. 
-Antaisin itselleni pisteitä seuraavasti: 9/10 p
+Tämä tuotti projekteista eniten päänvaivaa. Aina, kun yritin lisätä jotain uutta, niin edellinen lisäämäni asia lakkasi toimimasta. Jouduin kyselemään aika paljon apua tekoälyltä miksi ei toimi ja se kertoi, että scriptien järjestyksellä on väliä. Aika kauan jouduin niitä järjestelemään ja testailemaan, että kaikki toimi. Olen myös edelleen aika huono käyttämään valmiiden kirjastojen juttuja, kun tuntuu, että ne usein sekoittavat koko sivua ja tulee enemmän toimimattomuus ongelmia. Sain kuitenkin onneksi muutamia erilaisia juttuja sivuille lisättyä ja jQueryllä lyhennettyä AJAX hakua. Yritin lyhentää koodia enemmänkin jQueryllä, mutta myös se aiheutti samaa sivuston toimimattomuutta.
+Antaisin itselleni pisteitä seuraavasti: 7/10 p
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
-Kurssi on ollut mielenkiintoinen. Aina uuden asian kanssa tuntuu ensin mahdottomalta, mutta kun asiat alkavat avautua, niin se palkitsee ja innostaa.
-Oppimistani tukisi jos lähiopetusta olisi enemmän. Joku työpaja tyylinen lähiopetus olisi kiva.
+Edelleen kaipaisin lisätunteja, jotta olisi enemmän aikaa käydä asioita läpi esimerkein. Kurssi on ollut kiva ja kiva, että on ollut koko kevään pituinen, niin on saanut kauemmin käydä asioita läpi ja treenailla. Kiireessä olisi aika vaikea sisäistää kaikkea.
 
 ## Sisällysluettelo:
 
@@ -31,21 +25,18 @@ Oppimistani tukisi jos lähiopetusta olisi enemmän. Joku työpaja tyylinen läh
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-Projektin tarkoituksena oli tehdä Harry Potterista innostuneille lapsille helppo työkalu, jolla hakea lisätietoa hahmoista (kuvallisista). Lisäksi tuvan nimellä hakemalla saa listan kaikista siihen tupaan kuuluvista hahmoista.
+Jatkoin projekti2 tekemäääni Harry Potter aiheista sivustoa. Lisäsin sinne javascript kirjastojen avulla uusia juttuja.
 
 ## Kuvakaappaukset
-Linkki kuvaan (https://laureauas-my.sharepoint.com/:i:/g/personal/iik00062_laurea_fi/IQDUXbKn0GDgQ58AaaQ8JzByAT4x6Se93QZAJ5nEmEnsYEw?e=oOdayk)
+Linkki kuvaan (https://laureauas-my.sharepoint.com/:i:/g/personal/iik00062_laurea_fi/IQDSd4uaq57SQJKppLvvZ237AQ3PopL9oueokClQUoTTsBQ?e=nhbnHE)
 
 ## Teknologiat
 Käytin seuraavia teknologioita: `html`, `css` ja `jscript`.
-HTML loin perus HTML sivun rakenteen. Tein headerin otsikkoa ja taustaa varten. Lisäksi tein erilaisia div elementtejä mm. esim. korttipohjat hahmoille, haun tuloksille ja kuvalle.
-
-CSS avulla muokkasin sivun tyyliä esim. värit, fontit, se miten elementit asettuvat toisiinsa nähden, reunaviivat ja varjostukset. Lisäsin sivuskrollauksen hakutuloksiin, jotta sivu pysyy tasapainoisena.
-
-JAVASCRIPTIN avulla tein AJAX haun ulkoisesta APIsta. Hain dropdown valikkoon hahmot, joista oli kuva ja heistä saa lisätietoja hahmon nimeä klikkaamalla. Lisäksi tein hakukentän, jossa tuvan nimellä hakemalla saa listan kaikista siihen tupaan kuuluvista. Haulla tulee tieto nimestä sekä tieto onko hahmo opettaja, oppilas vai joku muu. Käänsin lisäksi suurimman osan tiedoista suomeksi itsetekemäni sanakirjan avulla.
+Pohjana toimii projekti 2 työ. 
+Lisäyksenä tein JavaScript kirjastojen avulla headeriin liikkuvat pilvet taustalle (Vanta.js) ja navigointipalkkiin ilmestyvän/häviävän tekstin (typed.js). Lisäksi muokkasin kortti elementtejä niin, että sivut avatessa kolme kortti elementtiä ilmestyvät kaikki hieman eri tyylillä sekä lyhensin myös AJAX hakua (jQuery)
 
 ## Asennus
-Sovellus toimii netlify linkin (https://ajaxprojekti.netlify.app/) kautta.
+Sovellus toimii netlify linkin () kautta.
 
 ## Kiitokset
 - [Google Fonts](https://fonts.google.com/)
@@ -56,9 +47,9 @@ Sovellus toimii netlify linkin (https://ajaxprojekti.netlify.app/) kautta.
 - [Canvas/Web-kehitys 1](https://canvas.laurea.fi/courses/14396)
     -Käytin luentokalvoja ja tallenteita mm. AJAX kutsun tekemiseen. Lisäksi sain apuja käännös-sanakirjan tekoon tunnilta.
 - [W3Schools](https://www.w3schools.com/) 
-    -Täältä etsin tietoa aina ensimmäisten joukossa. Esim. navigointirivi, dropdown.
+    -Täältä etsin tietoa aina ensimmäisten joukossa. Esim. navigointirivi, dropdown, jQuery efektit.
 - [Opettajan materiaali](https://mika-stenberg.gitbook.io/web-sovelluksia-javascriptin-avulla)
-    - Täältä etsin tietoa myös aina ensimmäisten joukossa. Esim. tiedon parsimiseen hain apuja.
+    - Täältä etsin tietoa myös aina ensimmäisten joukossa. 
 - [4K wallpapers](https://4kwallpapers.com/fantasy/hogwarts-harry-13694.html)
     - Täältä otin sivuilla olevan kuvan Tylypahkasta.
 - Lisäksi käytin paljon omaa aiempaa websivuston kehittämisen projektia sekä aiempaa tämän kurssin projektia, josta katsoin apuja mm. css tyyleihin ja myös javascriptin käyttöön.
