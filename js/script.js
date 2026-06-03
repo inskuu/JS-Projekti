@@ -205,7 +205,7 @@ window.addEventListener("load", function () {
   });
 });
 
-//Navigointipalkissa vaihtuvat taikalauseet jsdelivr/typed.js avulla
+//Navigointipalkissa vaihtuvat taikalauseet typed.js avulla
   new Typed("#typed", {
     strings: [
       "Qui arcana quaerit, veritatem in umbris inveniet",
