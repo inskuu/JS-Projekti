@@ -33,7 +33,7 @@ Linkki kuvaan (https://laureauas-my.sharepoint.com/:i:/g/personal/iik00062_laure
 ## Teknologiat
 Käytin seuraavia teknologioita: `html`, `css` ja `jscript`.
 Pohjana toimii projekti 2 työ. 
-Lisäyksenä tein JavaScript kirjastojen avulla headeriin liikkuvat pilvet taustalle (Vanta.js) ja navigointipalkkiin ilmestyvän/häviävän tekstin (typed.js). Lisäksi muokkasin kortti elementtejä niin, että sivut avatessa kolme kortti elementtiä ilmestyvät kaikki hieman eri tyylillä sekä lyhensin myös AJAX hakua (jQuery)
+Lisäyksenä tein JavaScript kirjastojen avulla headeriin liikkuvat pilvet taustalle (Vanta.js) ja navigointipalkkiin ilmestyvän/häviävän tekstin (jsdelivr/typed.js). Lisäksi muokkasin kortti elementtejä niin, että sivut avatessa kolme kortti elementtiä ilmestyvät kaikki hieman eri tyylillä sekä lyhensin myös AJAX hakua (jQuery)
 
 ## Asennus
 Sovellus toimii netlify linkin () kautta.
